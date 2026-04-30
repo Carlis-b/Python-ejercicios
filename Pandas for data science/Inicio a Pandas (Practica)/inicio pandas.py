@@ -43,3 +43,13 @@ print(df.head())
 df.set_index('#', inplace=True)
 print("DataFrame con nuevo indice:")
 print(df.head())
+
+#Ordenar el DataFrame por una columna
+df_ordenado = df.sort_values(by='Tipos')
+print("DataFrame ordenado por 'Tipos':")
+print(df_ordenado.head())
+
+#Ordenar el DataFrame por multiples columnas
+df_ordenado_multi = df.sort_values(by= ['Tipos', 'Type 2'], ascending=[True, False])
+print("DataFrame ordenado por 'Tipos' y 'Type 2':")
+print(df_ordenado_multi.head())
