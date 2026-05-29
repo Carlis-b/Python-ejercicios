@@ -1,0 +1,11 @@
+# Dataset grande
+Regresion/vehicles.csv
+
+# Archivos de macOS
+.DS_Store
+
+# Entorno virtual
+.venv/
+
+# Modelos
+*.joblib
